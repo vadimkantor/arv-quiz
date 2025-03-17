@@ -79,19 +79,6 @@ app.get("/task/:taskId", (req, res) => {
                         <tr><td><button onclick="submitAnswer('${taskId}', ${index})">${answer}</button></td></tr>
                     `).join('')}
                 </table>
-                <h1>ArV-Quiz</h1>
-                <div class="question">${question.question}</div>
-                <div class="answers">
-                    ${question.answers.map((answer, index) => `
-                        <button 
-                            class="${alreadyAnswered && index === question.correctAnswer ? 'highlight' : ''} ${alreadyAnswered ? 'disabled' : ''}"
-                            onclick="submitAnswer('${taskId}', ${index})"
-                            ${alreadyAnswered ? 'disabled' : ''}
-                        >
-                            ${answer}
-                        </button>
-                    `).join('')}
-                </div>
                 <script>
                     function submitAnswer(taskId, answer) {
                         fetch('/answer', {
