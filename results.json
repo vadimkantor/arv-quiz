@@ -1,16 +1,80 @@
 [
   {
-    "taskId": "4711",
-    "question": "Was ist die Hauptstadt von Frankreich?",
-    "givenAnswer": "Madrid",
-    "correctAnswer": "Paris",
-    "correct": false
+    "taskId": "1",
+    "category": "Geographie",
+    "givenAnswer": 3,
+    "correctAnswer": 3
   },
   {
-    "taskId": "0815",
-    "question": "Welche Programmiersprache wird für Node.js verwendet?",
-    "givenAnswer": "JavaScript",
-    "correctAnswer": "JavaScript",
-    "correct": true
+    "taskId": "2",
+    "category": "Geographie",
+    "givenAnswer": 2,
+    "correctAnswer": 2
+  },
+  {
+    "taskId": "3",
+    "category": "Geschichte",
+    "givenAnswer": 2,
+    "correctAnswer": 2
+  },
+  {
+    "taskId": "4",
+    "category": "Geschichte",
+    "givenAnswer": 0,
+    "correctAnswer": 0
+  },
+  {
+    "taskId": "5",
+    "category": "Geschichte",
+    "givenAnswer": 0,
+    "correctAnswer": 0
+  },
+  {
+    "taskId": "6",
+    "category": "Programmierung",
+    "givenAnswer": 0,
+    "correctAnswer": 0
+  },
+  {
+    "taskId": "7",
+    "category": "Programmierung",
+    "givenAnswer": 0,
+    "correctAnswer": 0
+  },
+  {
+    "taskId": "8",
+    "category": "Programmierung",
+    "givenAnswer": 1,
+    "correctAnswer": 1
+  },
+  {
+    "taskId": "9",
+    "category": "Altersvorsorge & Rentensysteme",
+    "givenAnswer": 0,
+    "correctAnswer": 0
+  },
+  {
+    "taskId": "10",
+    "category": "Altersvorsorge & Rentensysteme",
+    "givenAnswer": 1,
+    "correctAnswer": 1
+  },
+  {
+    "taskId": "11",
+    "category": "Programmierung",
+    "givenAnswer": 3,
+    "correctAnswer": 0
+  },
+  {
+    "taskId": "12",
+    "category": "Programmierung",
+    "givenAnswer": 0,
+    "correctAnswer": 0
+  },
+  {
+    "taskId": "13",
+    "category": "Auto",
+    "givenAnswer": 0,
+    "correctAnswer": 0
   }
 ]

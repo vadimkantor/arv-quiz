@@ -1,17 +1,209 @@
-- taskId: "4711"
-  question: "Was ist die Hauptstadt von Frankreich?"
+- taskId: "0"
+  category: "Geographie"
+  difficulty: 3
+  question: "Welcher Fluss ist der längste der Welt?"
   answers:
-    - "Berlin"
-    - "Madrid"
-    - "Paris"
-    - "Rom"
+    - "Amazonas"
+    - "Nil"
+    - "Jangtse"
+    - "Mississippi"
+  correctAnswer: 1
+
+- taskId: "1"
+  category: "Geographie"
+  difficulty: 5
+  question: "Welche Stadt ist die Hauptstadt von Kanada?"
+  answers:
+    - "Toronto"
+    - "Vancouver"
+    - "Montreal"
+    - "Ottawa"
+  correctAnswer: 3
+
+- taskId: "2"
+  category: "Geographie"
+  difficulty: 7
+  question: "Welches ist das flächenmäßig größte Land der Welt?"
+  answers:
+    - "Kanada"
+    - "USA"
+    - "Russland"
+    - "China"
   correctAnswer: 2
 
-- taskId: "0815"
-  question: "Welche Programmiersprache wird für Node.js verwendet?"
+- taskId: "3"
+  category: "Geschichte"
+  difficulty: 4
+  question: "In welchem Jahr fiel die Berliner Mauer?"
   answers:
-    - "Python"
-    - "Java"
-    - "JavaScript"
-    - "C++"
+    - "1985"
+    - "1987"
+    - "1989"
+    - "1991"
   correctAnswer: 2
+
+- taskId: "4"
+  category: "Geschichte"
+  difficulty: 6
+  question: "Welcher Vertrag beendete den Ersten Weltkrieg?"
+  answers:
+    - "Vertrag von Versailles"
+    - "Vertrag von Wien"
+    - "Münchner Abkommen"
+    - "Potsdamer Abkommen"
+  correctAnswer: 0
+
+- taskId: "5"
+  category: "Geschichte"
+  difficulty: 8
+  question: "Wer war während des Zweiten Weltkriegs Premierminister von Großbritannien?"
+  answers:
+    - "Winston Churchill"
+    - "Neville Chamberlain"
+    - "Clement Attlee"
+    - "Margaret Thatcher"
+  correctAnswer: 0
+
+- taskId: "6"
+  category: "Programmierung"
+  difficulty: 3
+  question: "Welcher Operator wird in Java für die Modulo-Berechnung verwendet?"
+  answers:
+    - "%"
+    - "/"
+    - "//"
+    - "&"
+  correctAnswer: 0
+
+- taskId: "7"
+  category: "Programmierung"
+  difficulty: 5
+  question: "Was bedeutet SOLID in der objektorientierten Programmierung?"
+  answers:
+    - "Fünf Prinzipien für sauberen Code"
+    - "Ein Datenbankmodell"
+    - "Eine Art von Compiler-Optimierung"
+    - "Eine Codierungsmethode für Binärdateien"
+  correctAnswer: 0
+
+- taskId: "8"
+  category: "Programmierung"
+  difficulty: 7
+  question: "Welches Java-Feature ermöglicht die parallele Verarbeitung von Code?"
+  answers:
+    - "Streams"
+    - "Threads"
+    - "Lambdas"
+    - "Annotations"
+  correctAnswer: 1
+
+- taskId: "9"
+  category: "Altersvorsorge & Rentensysteme"
+  difficulty: 4
+  question: "Wie viele Jahre Einzahlungen sind in Deutschland erforderlich, um eine Regelaltersrente zu erhalten?"
+  answers:
+    - "5 Jahre"
+    - "10 Jahre"
+    - "35 Jahre"
+    - "45 Jahre"
+  correctAnswer: 0
+
+- taskId: "10"
+  category: "Altersvorsorge & Rentensysteme"
+  difficulty: 6
+  question: "Was ist der Unterschied zwischen gesetzlicher und privater Rentenversicherung?"
+  answers:
+    - "Es gibt keinen Unterschied"
+    - "Die gesetzliche ist staatlich, die private wird individuell abgeschlossen"
+    - "Die private Rente zahlt sich ab 60 aus, die gesetzliche erst ab 70"
+    - "Die gesetzliche wird nur an Selbstständige gezahlt"
+  correctAnswer: 1
+
+- taskId: "11"
+  category: "Programmierung"
+  difficulty: 6
+  question: "Welche Architektur nutzt Kubernetes für die Verwaltung von Containern?"
+  answers:
+    - "Master-Worker"
+    - "Client-Server"
+    - "Monolithisch"
+    - "Event-gesteuert"
+  correctAnswer: 0
+
+- taskId: "12"
+  category: "Programmierung"
+  difficulty: 8
+  question: "Welches Tool wird häufig mit Kubernetes für GitOps-Deployments verwendet?"
+  answers:
+    - "ArgoCD"
+    - "Terraform"
+    - "Helm"
+    - "Ansible"
+  correctAnswer: 0
+
+- taskId: "13"
+  category: "Auto"
+  difficulty: 3
+  question: "Was bedeutet 'PS' bei Autos?"
+  answers:
+    - "Die Leistung des Motors"
+    - "Die Reifenbreite"
+    - "Die Anzahl der Gänge"
+    - "Die Reichweite"
+  correctAnswer: 0
+
+- taskId: "14"
+  category: "Auto"
+  difficulty: 5
+  question: "Welche Marke produziert das Modell 'Mustang'?"
+  answers:
+    - "Chevrolet"
+    - "Ford"
+    - "BMW"
+    - "Dodge"
+  correctAnswer: 1
+
+- taskId: "15"
+  category: "Sport"
+  difficulty: 4
+  question: "Wie viele Spieler hat ein Handballteam auf dem Feld?"
+  answers:
+    - "5"
+    - "6"
+    - "7"
+    - "8"
+  correctAnswer: 2
+
+- taskId: "16"
+  category: "Sport"
+  difficulty: 6
+  question: "Welches Land hat die meisten Olympischen Goldmedaillen im Schwimmen gewonnen?"
+  answers:
+    - "Deutschland"
+    - "USA"
+    - "Australien"
+    - "Russland"
+  correctAnswer: 1
+
+- taskId: "17"
+  category: "Programmierung"
+  difficulty: 9
+  question: "Welcher Kubernetes-Befehl zeigt die Logs eines Pods an?"
+  answers:
+    - "kubectl logs pod-name"
+    - "kubectl get logs pod-name"
+    - "kubectl describe pod pod-name"
+    - "kubectl inspect pod pod-name"
+  correctAnswer: 0
+
+- taskId: "18"
+  category: "Programmierung"
+  difficulty: 10
+  question: "Welche Kubernetes-Komponente verwaltet den Cluster-Zustand?"
+  answers:
+    - "etcd"
+    - "kube-apiserver"
+    - "kube-controller-manager"
+    - "kubelet"
+  correctAnswer: 0
+
