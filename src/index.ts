@@ -4,6 +4,7 @@ import * as fs from "fs";
 import * as cors from "cors";
 
 interface Question {
+    category: string;
     taskId: string;
     question: string;
     answers: string[];
@@ -19,6 +20,7 @@ app.use(cors());
 let questions: Question[] = [];
 try {
     const fileContents = fs.readFileSync("questions.yaml", "utf8");
+    console.log("Loaded questions:", questions);
     questions = yaml.load(fileContents) as Question[];
 } catch (error) {
     console.error("Error loading questions: ", error);
@@ -60,12 +62,23 @@ app.get("/task/:taskId", (req, res) => {
                 <style>
                     body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
                     .question { font-size: 24px; margin-bottom: 20px; }
-                    .answers button { display: block; margin: 10px auto; padding: 10px; font-size: 18px; }
-                    .highlight { background-color: yellow; }
-                    .disabled { pointer-events: none; opacity: 0.6; }
+                    table { width: 50%; margin: auto; border-collapse: collapse; }
+                    th, td { padding: 10px; border: 1px solid #000; }
                 </style>
             </head>
             <body>
+                <h1>ArV-Quiz</h1>
+                <table>
+                    <tr><th>Task ID</th><td>${question.taskId}</td></tr>
+                    <tr><th>Kategorie</th><td>${question.category}</td></tr>
+                    <tr><th>Frage</th><td>${question.question}</td></tr>
+                </table>
+                <h2>Antworten</h2>
+                <table>
+                    ${question.answers.map((answer, index) => `
+                        <tr><td><button onclick="submitAnswer('${taskId}', ${index})">${answer}</button></td></tr>
+                    `).join('')}
+                </table>
                 <h1>ArV-Quiz</h1>
                 <div class="question">${question.question}</div>
                 <div class="answers">
