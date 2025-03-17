@@ -68,6 +68,21 @@ app.get("/task/:taskId", (req, res) => {
             </head>
             <body>
                 <h1>ArV-Quiz</h1>
+                <div class="Task ID">${question.taskId}</div>
+                <div class="Kategorie">${question.category}</div>
+                <div class="Frage">${question.question}</div>
+                <div class="answers">
+                    ${question.answers.map((answer, index) => `
+                        <button 
+                            class="${alreadyAnswered && index === question.correctAnswer ? 'highlight' : ''} ${alreadyAnswered ? 'disabled' : ''}"
+                            onclick="submitAnswer('${taskId}', ${index})"
+                            ${alreadyAnswered ? 'disabled' : ''}
+                        >
+                            ${answer}
+                        </button>
+                    `).join('')}
+                </div>
+                
                 <table>
                     <tr><th>Task ID</th><td>${question.taskId}</td></tr>
                     <tr><th>Kategorie</th><td>${question.category}</td></tr>
