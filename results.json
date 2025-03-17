@@ -1,0 +1,16 @@
+[
+  {
+    "taskId": "4711",
+    "question": "Was ist die Hauptstadt von Frankreich?",
+    "givenAnswer": "Madrid",
+    "correctAnswer": "Paris",
+    "correct": false
+  },
+  {
+    "taskId": "0815",
+    "question": "Welche Programmiersprache wird für Node.js verwendet?",
+    "givenAnswer": "JavaScript",
+    "correctAnswer": "JavaScript",
+    "correct": true
+  }
+]

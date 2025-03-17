@@ -1,0 +1,17 @@
+- taskId: "4711"
+  question: "Was ist die Hauptstadt von Frankreich?"
+  answers:
+    - "Berlin"
+    - "Madrid"
+    - "Paris"
+    - "Rom"
+  correctAnswer: 2
+
+- taskId: "0815"
+  question: "Welche Programmiersprache wird für Node.js verwendet?"
+  answers:
+    - "Python"
+    - "Java"
+    - "JavaScript"
+    - "C++"
+  correctAnswer: 2
